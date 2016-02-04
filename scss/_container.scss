@@ -1,0 +1,130 @@
+/*Containers*/
+#wrapper {
+    @extend %autoCenter;
+    text-align: center;
+}
+
+#header {
+  padding: 5%;
+  #main-header {
+    @include desktop {
+      margin-bottom: 2.5%;
+      h1 {
+        float: left;
+        margin: 0; //not extended because outside of base directive
+        width: $half_width;
+        text-align: left;
+      }
+    }
+  }  
+}
+
+#nav {
+  a:hover {
+    @include tablet {
+      color: $offset_black;
+    }
+  }    
+  @include desktop {
+    float: right;
+    width: $half_width; 
+    text-align: right;
+  }
+  ul {
+    @include desktop {
+       margin: 0; //not extended because outside of base directive
+    }  
+    li{
+        background-color: $white;
+        text-align: center;
+        padding: 3.5%;
+        margin-bottom: 7px;
+        @include tablet {
+          background-color: $background_color;
+          display: inline-block;
+          padding: 2.5%;
+        }
+    }
+  }
+}
+#profile {
+   padding-top: 1px;
+   p {
+    @include tablet {
+      text-align: left;
+      width: 55%;
+    }
+  }
+}
+
+#portfolio {
+    padding: 0 5%;
+    background-color: $white;   
+  h3 {
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  @include desktop {
+    margin: 0 2.5%;
+    padding: 0 2.5%;
+  }
+}
+
+#contact {
+   padding-top: 5px;
+  p {
+   margin: 1em; 
+  }
+  li {
+    margin: 1em 0;
+  }
+}
+
+footer {
+    border-top: 1px solid $offset_black;
+    width: 90%;
+    @extend %autoCenter;
+  ul {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  li {
+    display: inline-block;
+    margin: .75em 0;
+    font-size: 90%
+  }
+}
+
+#student-name {
+  float: left;
+  width: 45%;
+  text-align: left;
+  h4 {
+    @extend %removeMargin;
+  }
+  @include tablet {
+    text-align: left;
+    width: $half_width;
+  }
+}
+
+#mfoot {
+  float: right;
+  width: 45%;
+  text-align: right;
+  @include tablet {
+    display: none;
+  }
+}
+
+#tdfoot {
+  display: none;
+  @include tablet {
+    display: inline-block;
+    width: $half_width;
+    text-align: right;
+    li {
+      padding-left: 5px;
+    }
+  }
+}

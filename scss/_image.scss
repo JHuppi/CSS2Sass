@@ -1,0 +1,39 @@
+img {
+  max-width: 100%;
+}
+
+#profile-picture {
+  padding: 0 5%;
+  @include tablet {
+    padding-left: 5%;
+    float: right;
+    width: 45%;
+  }
+  @include desktop {
+    padding-left: 7.5%;
+    padding-right: 2.5%; 
+  }
+}
+
+.thumbnail {
+  padding: 0 2.5% 7.5%;
+  @include tablet {
+    float: left;
+    width: $half_width;
+      p {
+        margin: 1em;
+      }
+  }
+  @include desktop {
+    width: 33.3%;
+  }
+}
+
+.thumbnail:nth-child(4n) {
+  @include tablet {
+    clear: left;
+  }
+  @include desktop {
+    clear: none;
+  }
+}
