@@ -1,3 +1,12 @@
+/*Placeholder Selectors*/
+%autoCenter {
+  margin: 0 auto;
+}
+
+%removeMargin {
+  margin: 0;
+}
+
 /*Containers*/
 #wrapper {
     @extend %autoCenter;
@@ -58,6 +67,7 @@
 }
 
 #portfolio {
+    @extend %autoCenter;
     padding: 0 5%;
     background-color: $white;   
   h3 {

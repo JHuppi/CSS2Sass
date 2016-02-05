@@ -1,8 +1,8 @@
-@import "variable";
+@import "base/variable";
 
-@import "base";
+@import "base/base";
 
-@import "container";
+@import "layout/container";
 
-@import "image";
+@import "component/image";
 

@@ -28,13 +28,6 @@ li {
   list-style: none;
 }
 
-%autoCenter {
-  margin: 0 auto;
-}
-
-%removeMargin {
-  margin: 0;
-}
 
 @mixin tablet {
   @media (min-width: 768px) {
